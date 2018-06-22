@@ -2,8 +2,8 @@
 
 @section('content')
     @if (Auth::check())
-        <?php $task = Auth::task(); ?>
-        {{ $task->name }}
+        <?php $user = Auth::User(); ?>
+        {{ $user->name }}
     @else
         <div class="center jumbotron">
             <div class="text-center">
